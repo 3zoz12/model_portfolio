@@ -109,7 +109,7 @@ export function Layout() {
           className="text-neutral-400 text-xs"
           style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "10px" }}
         >
-          Made with Pixpa
+          Made by Suofiy
         </span>
       </footer>
     </div>
