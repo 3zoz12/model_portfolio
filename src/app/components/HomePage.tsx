@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "motion/react";
 import heroImage from "../images/WhatsApp Image 2026-03-24 at 3.05.16 PM (3).jpeg";
-import editorialImage from "../images/80.jpeg";
+import editorialImage from "../images/110.jpeg";
 import portraitImage from "../images/3.jpeg";
 
 export function HomePage() {
