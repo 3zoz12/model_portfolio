@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "motion/react";
-import heroImage from "../images/1.jpeg";
-import editorialImage from "../images/2.jpeg";
+import heroImage from "../images/WhatsApp Image 2026-03-24 at 3.05.16 PM (3).jpeg";
+import editorialImage from "../images/80.jpeg";
 import portraitImage from "../images/3.jpeg";
 
 export function HomePage() {
@@ -198,17 +198,17 @@ export function HomePage() {
             viewport={{ once: true, amount: 0.24 }}
             transition={reduceMotion ? { duration: 0 } : { duration: 0.95, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p>Height: 190</p>
-            <p> Neck: 45 </p>
-            <p>Shoulders : 50</p>
-            <p>Chest : 40 </p>
-            <p>Sleeves : 66</p>
-            <p>Waist : 65</p>
-            <p>Hips : 84</p>
-            <p>Inseam : 98 </p>
-            <p>Thigh  : 45 </p>
-            <p>Shoe: 44</p>
-            <p>Eyes  : Black</p>
+            <p>Height: 6&apos;3</p>
+            <p>Neck: 17.7</p>
+            <p>Shoulders: 19.7</p>
+            <p>Chest: 15.7</p>
+            <p>Sleeves: 26</p>
+            <p>Waist: 25.6</p>
+            <p>Hips: 33.1</p>
+            <p>Inseam: 38.6</p>
+            <p>Thigh: 17.7</p>
+            <p>Shoe: 11</p>
+            <p>Eyes: brown</p>
           </motion.div>
         </motion.div>
       </motion.section>
