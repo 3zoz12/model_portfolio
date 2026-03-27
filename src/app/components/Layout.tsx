@@ -35,11 +35,12 @@ export function Layout() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="relative text-[#121212] after:absolute after:left-0 after:right-0 after:-bottom-[5px] after:h-px after:origin-left after:scale-x-0 after:bg-black after:transition-transform after:duration-200 after:content-[''] hover:after:scale-x-100"
+                className="relative text-[#121212] tracking-[0.08em] after:absolute after:left-0 after:right-0 after:-bottom-[6px] after:h-px after:origin-left after:scale-x-0 after:bg-[#121212] after:transition-transform after:duration-300 after:ease-out after:content-[''] hover:after:scale-x-100"
                 style={{
-                  fontFamily: "'Cormorant Garamond', Georgia, serif",
-                  fontSize: "14px",
+                  fontFamily: "'Montserrat', sans-serif",
+                  fontSize: "12px",
                   fontWeight: 500,
+                  textTransform: "uppercase",
                 }}
               >
                 {link.label}
@@ -75,11 +76,12 @@ export function Layout() {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="text-[#2f2420] transition-opacity hover:opacity-65"
+                  className="text-[#2f2420] transition-opacity hover:opacity-65 tracking-widest text-center py-2"
                   style={{
-                    fontFamily: "'Cormorant Garamond', Georgia, serif",
-                    fontSize: "18px",
-                    fontWeight: 400,
+                    fontFamily: "'Montserrat', sans-serif",
+                    fontSize: "14px",
+                    fontWeight: 500,
+                    textTransform: "uppercase",
                   }}
                   onClick={() => setMenuOpen(false)}
                 >

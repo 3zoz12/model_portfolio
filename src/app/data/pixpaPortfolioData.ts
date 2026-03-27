@@ -15,6 +15,7 @@ export interface PixpaPortfolioImage {
   alt: string;
   width: number;
   height: number;
+  description?: string;
 }
 
 export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
@@ -24,6 +25,7 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 1",
     width: 960,
     height: 1280,
+    description: "black and white",
   },
   {
     id: "pixpa-3",
@@ -31,6 +33,7 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 2",
     width: 1024,
     height: 1280,
+    description: "Crimson Studio Edition — Fall Ready-to-Wear",
   },
   {
     id: "pixpa-4",
@@ -38,6 +41,7 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 3",
     width: 854,
     height: 1280,
+    description: "Confidence, framed in red.",
   },
   {
     id: "pixpa-5",
@@ -45,6 +49,7 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 4",
     width: 854,
     height: 1280,
+    description: "Cinema Radio Archives — Downtown Urban Edge",
   },
   {
     id: "pixpa-6",
@@ -52,6 +57,7 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 5",
     width: 960,
     height: 1280,
+    description: "Nostalgic 249 — Sudanese Cultural Heritage",
   },
   {
     id: "pixpa-7",
@@ -59,6 +65,7 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 6",
     width: 960,
     height: 1280,
+    description: "Golden Hour Textures — Casual Street Style",
   },
   {
     id: "pixpa-8",
@@ -66,6 +73,7 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 7",
     width: 854,
     height: 1280,
+    description: "Not just a look — a mood, a frequency, a whole atmosphere.",
   },
   {
     id: "pixpa-9",
@@ -73,6 +81,7 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 8",
     width: 854,
     height: 1280,
+    description: "Not every sound is heard — some are worn, lived, and carried.",
   },
   {
     id: "pixpa-10",
@@ -80,6 +89,7 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 9",
     width: 1066,
     height: 1600,
+    description: "Golden Hour Textures — Casual Street Style",
   },
   {
     id: "pixpa-11",
@@ -87,5 +97,6 @@ export const pixpaPortfolioImages: PixpaPortfolioImage[] = [
     alt: "Azeez portfolio image 10",
     width: 960,
     height: 1280,
+    description: "Architectural Contrast — High Fashion Concrete",
   },
 ];

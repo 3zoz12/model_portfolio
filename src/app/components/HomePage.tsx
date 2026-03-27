@@ -66,11 +66,12 @@ export function HomePage() {
             Hi, I&apos;m Azeez.
           </motion.h1>
           <motion.p
-            className="max-w-[620px] text-[#2f2420]"
+            className="max-w-[540px] text-[#4a3f3a]"
             style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "clamp(1.5rem, 2vw, 2.15rem)",
-              lineHeight: 1.35,
+              fontFamily: "'Montserrat', sans-serif",
+              fontSize: "clamp(1rem, 1.25vw, 1.15rem)",
+              lineHeight: 1.7,
+              fontWeight: 400,
             }}
             initial={textInitial}
             animate={textReveal}
@@ -88,13 +89,14 @@ export function HomePage() {
               href="https://www.instagram.com/_7ateesh_?igsh=ZG52MzhkbXEwNTdw&utm_source=qr"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center rounded-[12px] bg-[#24211f] px-10 py-4 text-[#f7f0ee] transition-colors hover:bg-[#393330]"
+              className="inline-flex items-center justify-center rounded-full bg-transparent border border-[#231917] px-10 py-[15px] text-[#231917] transition-all duration-300 hover:bg-[#231917] hover:text-[#f7f0ee]"
               style={{
-                fontFamily: "'Cormorant Garamond', Georgia, serif",
-                fontSize: "clamp(1.15rem, 1.2vw, 1.45rem)",
-                letterSpacing: "0.01em",
+                fontFamily: "'Montserrat', sans-serif",
+                fontSize: "11px",
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
                 textDecoration: "none",
-                fontWeight: 500,
+                fontWeight: 600,
               }}
             >
               Get In Touch
@@ -169,14 +171,15 @@ export function HomePage() {
           viewport={{ once: true, amount: 0.22 }}
           transition={reduceMotion ? { duration: 0 } : { duration: 0.9, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
         >
-          <motion.p
+          <motion.h2
             style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "clamp(1.25rem, 1.8vw, 1.8rem)",
-              letterSpacing: "0.08em",
+              fontFamily: "'Montserrat', sans-serif",
+              fontSize: "11px",
+              letterSpacing: "0.2em",
               color: "#7a7068",
-              marginBottom: "24px",
-              fontWeight: 400,
+              marginBottom: "40px",
+              fontWeight: 600,
+              textTransform: "uppercase",
             }}
             initial={textInitial}
             whileInView={textReveal}
@@ -184,31 +187,54 @@ export function HomePage() {
             transition={reduceMotion ? { duration: 0 } : { duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
             Measurements
-          </motion.p>
+          </motion.h2>
+          
           <motion.div
-            style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "clamp(2.75rem, 5vw, 5rem)",
-              color: "#231917",
-              lineHeight: 1.32,
-              fontWeight: 400,
-            }}
+            className="w-full max-w-[480px] grid grid-cols-2 gap-x-8 gap-y-7 text-left"
             initial={textInitial}
             whileInView={textReveal}
             viewport={{ once: true, amount: 0.24 }}
             transition={reduceMotion ? { duration: 0 } : { duration: 0.95, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p>Height: 6&apos;3</p>
-            <p>Neck: 17.7</p>
-            <p>Shoulders: 19.7</p>
-            <p>Chest: 15.7</p>
-            <p>Sleeves: 26</p>
-            <p>Waist: 25.6</p>
-            <p>Hips: 33.1</p>
-            <p>Inseam: 38.6</p>
-            <p>Thigh: 17.7</p>
-            <p>Shoe: 11</p>
-            <p>Eyes: brown</p>
+            {[
+              { label: "Height", value: "6'3" },
+              { label: "Neck", value: "17.7" },
+              { label: "Shoulders", value: "19.7" },
+              { label: "Chest", value: "15.7" },
+              { label: "Sleeves", value: "26" },
+              { label: "Waist", value: "25.6" },
+              { label: "Hips", value: "33.1" },
+              { label: "Inseam", value: "38.6" },
+              { label: "Thigh", value: "17.7" },
+              { label: "Shoe", value: "11" },
+              { label: "Eyes", value: "Brown" },
+            ].map((stat, i) => (
+              <div key={i} className="flex flex-col border-b border-[#e6ded8] pb-3">
+                <span
+                  style={{
+                    fontFamily: "'Montserrat', sans-serif",
+                    fontSize: "10px",
+                    fontWeight: 600,
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    color: "#9e9188",
+                    marginBottom: "4px"
+                  }}
+                >
+                  {stat.label}
+                </span>
+                <span
+                  style={{
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
+                    fontSize: "1.75rem",
+                    color: "#231917",
+                    lineHeight: 1,
+                  }}
+                >
+                  {stat.value}
+                </span>
+              </div>
+            ))}
           </motion.div>
         </motion.div>
       </motion.section>

@@ -4,6 +4,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 interface LightboxImage {
   src: string;
   alt: string;
+  description?: string;
 }
 
 interface LightboxProps {
@@ -65,18 +66,30 @@ export function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: Ligh
         <ChevronLeft size={32} />
       </button>
 
-      {/* Image */}
+      {/* Image & Description Container */}
       <div
-        className="max-w-[90vw] max-h-[90vh] flex items-center justify-center"
+        className="max-w-[90vw] max-h-[90vh] flex flex-col items-center justify-center gap-6"
         onClick={(e) => e.stopPropagation()}
       >
         <img
           key={current.src}
           src={current.src}
           alt={current.alt}
-          className="max-w-full max-h-[88vh] object-contain"
+          className="max-w-full max-h-[75vh] object-contain drop-shadow-2xl"
           style={{ userSelect: "none" }}
         />
+        
+        {/* Session Description Widget */}
+        {current.description && (
+          <div className="text-center bg-black/40 backdrop-blur-md px-6 py-3 rounded-full border border-white/10 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <span 
+              className="text-[#f7f0ee] tracking-[0.15em] uppercase text-[10px] md:text-xs font-medium" 
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              {current.description}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Next Button */}
